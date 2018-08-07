@@ -10,3 +10,31 @@
 
   </body>
 </html>
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package cl.allware.pmpdmz.business;
+
+import cl.allware.pmpdmz.entities.excepcions.GenericException;
+import cl.allware.pmpdmz.entities.requests.GetRequest;
+import cl.allware.pmpdmz.entities.responses.GenericResponse;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+/**
+ *
+ * @author avargas
+ */
+public class BusinessLogic {
+
+    private static final String platformErrorMsg = "La plataforma no tiene permisos para usar este servicio";
+    private static final Logger log = LogManager.getLogger(BusinessLogic.class);
+    
+    public GenericResponse doDPI(GetRequest request) throws GenericException {
+        GenericResponse vr= new GenericResponse();
+        return vr;
+    }
+    
+}
